@@ -13,10 +13,15 @@
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 [![MCP](https://img.shields.io/badge/MCP-FastMCP-blueviolet?style=for-the-badge)](https://github.com/jlowin/fastmcp)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Cloud%20Run-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)](https://github-card-generator-979561348272.asia-south1.run.app/)
 
 <br/>
 
 > **Transform any GitHub profile into a stunning, AI-analyzed developer identity card — in seconds.**
+
+<br/>
+
+### 🌐 [Try the Live Demo →](https://github-card-generator-979561348272.asia-south1.run.app/)
 
 <br/>
 
@@ -45,9 +50,10 @@
 
 ---
 
-## 🖼️ Demo
+##  Demo
 
-<img width="959" height="449" alt="image" src="https://github.com/user-attachments/assets/b20b8000-81f2-4f5d-a47e-1cc1be8e2146" />
+<img width="959" height="449" alt="Screenshot 2026-05-23 134106" src="https://github.com/user-attachments/assets/51e4f98a-f040-45da-a788-5021a6bb2160" />
+
 
 > 💡 **Try it yourself** — generate a card for `torvalds`, `gvanrossum`, or any GitHub username!
 
@@ -64,23 +70,23 @@
                             │  POST /generate
                             ▼
 ┌─────────────────────────────────────────────────────────┐
-│                  Backend (FastAPI)                      │
+│                  Backend (FastAPI)                       │
 │                     Port 8080                           │
 │                                                         │
-│   ┌──────────────┐  ┌───────────────┐  ┌────────────┐   │
-│   │scrape_github │  │analyze_profile│  │generate_   │   │
-│   │              │  │               │  │card_html   │   │
-│   │ GitHub REST  │  │  Gemini AI    │  │            │   │
-│   │     API      │  │  2.5 Flash    │  │ 5 Themes   │   │
-│   └──────┬───────┘  └───────┬───────┘  └─────┬──────┘   │
-│          └──────────────────┴────────────────┘          │
+│   ┌──────────────┐  ┌───────────────┐  ┌────────────┐  │
+│   │scrape_github │  │analyze_profile│  │generate_   │  │
+│   │              │  │               │  │card_html   │  │
+│   │ GitHub REST  │  │  Gemini AI    │  │            │  │
+│   │     API      │  │  2.5 Flash    │  │ 5 Themes   │  │
+│   └──────┬───────┘  └───────┬───────┘  └─────┬──────┘  │
+│          └──────────────────┴────────────────┘         │
 │                             │                           │
 │                    ┌────────▼────────┐                  │
 │                    │   save_card     │                  │
 │                    │  (SVG output)   │                  │
 │                    └─────────────────┘                  │
 │                                                         │
-│   🔌 All 4 tools exposed via MCP (FastMCP)             |
+│   🔌 All 4 tools exposed via MCP (FastMCP)              │
 │   🤖 Google ADK Agent orchestrates the pipeline        │
 └─────────────────────────────────────────────────────────┘
 ```
