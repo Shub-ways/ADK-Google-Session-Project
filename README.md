@@ -47,16 +47,7 @@
 
 ## 🖼️ Demo
 
-<!-- Add your screenshots below -->
-```
-┌─────────────────────────────────────────┐
-│                                         │
-│   [ Screenshot / GIF goes here ]        │
-│                                         │
-│   Coming soon — run it yourself! 👇     │
-│                                         │
-└─────────────────────────────────────────┘
-```
+<img width="959" height="449" alt="image" src="https://github.com/user-attachments/assets/b20b8000-81f2-4f5d-a47e-1cc1be8e2146" />
 
 > 💡 **Try it yourself** — generate a card for `torvalds`, `gvanrossum`, or any GitHub username!
 
@@ -73,23 +64,23 @@
                             │  POST /generate
                             ▼
 ┌─────────────────────────────────────────────────────────┐
-│                  Backend (FastAPI)                       │
+│                  Backend (FastAPI)                      │
 │                     Port 8080                           │
 │                                                         │
-│   ┌──────────────┐  ┌───────────────┐  ┌────────────┐  │
-│   │scrape_github │  │analyze_profile│  │generate_   │  │
-│   │              │  │               │  │card_html   │  │
-│   │ GitHub REST  │  │  Gemini AI    │  │            │  │
-│   │     API      │  │  2.5 Flash    │  │ 5 Themes   │  │
-│   └──────┬───────┘  └───────┬───────┘  └─────┬──────┘  │
-│          └──────────────────┴────────────────┘         │
+│   ┌──────────────┐  ┌───────────────┐  ┌────────────┐   │
+│   │scrape_github │  │analyze_profile│  │generate_   │   │
+│   │              │  │               │  │card_html   │   │
+│   │ GitHub REST  │  │  Gemini AI    │  │            │   │
+│   │     API      │  │  2.5 Flash    │  │ 5 Themes   │   │
+│   └──────┬───────┘  └───────┬───────┘  └─────┬──────┘   │
+│          └──────────────────┴────────────────┘          │
 │                             │                           │
 │                    ┌────────▼────────┐                  │
 │                    │   save_card     │                  │
 │                    │  (SVG output)   │                  │
 │                    └─────────────────┘                  │
 │                                                         │
-│   🔌 All 4 tools exposed via MCP (FastMCP)              │
+│   🔌 All 4 tools exposed via MCP (FastMCP)             |
 │   🤖 Google ADK Agent orchestrates the pipeline        │
 └─────────────────────────────────────────────────────────┘
 ```
