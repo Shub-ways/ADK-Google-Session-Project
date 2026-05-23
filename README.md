@@ -70,23 +70,23 @@
                             │  POST /generate
                             ▼
 ┌─────────────────────────────────────────────────────────┐
-│                  Backend (FastAPI)                       │
+│                  Backend (FastAPI)                      │
 │                     Port 8080                           │
 │                                                         │
-│   ┌──────────────┐  ┌───────────────┐  ┌────────────┐  │
-│   │scrape_github │  │analyze_profile│  │generate_   │  │
-│   │              │  │               │  │card_html   │  │
-│   │ GitHub REST  │  │  Gemini AI    │  │            │  │
-│   │     API      │  │  2.5 Flash    │  │ 5 Themes   │  │
-│   └──────┬───────┘  └───────┬───────┘  └─────┬──────┘  │
-│          └──────────────────┴────────────────┘         │
+│   ┌──────────────┐  ┌───────────────┐  ┌────────────┐   │
+│   │scrape_github │  │analyze_profile│  │generate_   │   │
+│   │              │  │               │  │card_html   │   │
+│   │ GitHub REST  │  │  Gemini AI    │  │            │   │
+│   │     API      │  │  2.5 Flash    │  │ 5 Themes   │   │
+│   └──────┬───────┘  └───────┬───────┘  └─────┬──────┘   │
+│          └──────────────────┴────────────────┘          │
 │                             │                           │
 │                    ┌────────▼────────┐                  │
 │                    │   save_card     │                  │
 │                    │  (SVG output)   │                  │
 │                    └─────────────────┘                  │
 │                                                         │
-│   🔌 All 4 tools exposed via MCP (FastMCP)              │
+│   🔌 All 4 tools exposed via MCP (FastMCP)             │
 │   🤖 Google ADK Agent orchestrates the pipeline        │
 └─────────────────────────────────────────────────────────┘
 ```
