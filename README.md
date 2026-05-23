@@ -21,12 +21,10 @@
 
 <br/>
 
-### 🌐 [Try the Live Demo →](https://github-card-generator-979561348272.asia-south1.run.app/)
+<a href="https://github-card-generator-979561348272.asia-south1.run.app/" target="_blank">🌐 Try the Live Demo →</a>
 
 <br/>
 
-<!-- Add screenshot/demo GIF here -->
-<!-- ![Demo](assets/demo.gif) -->
 
 [🚀 Quick Start](#-quick-start) · [📡 API Reference](#-api-reference) · [🎨 Themes](#-themes) · [🏗️ Architecture](#%EF%B8%8F-architecture) · [🤝 Contributing](#-contributing)
 
