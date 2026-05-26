@@ -14,7 +14,7 @@ mcp = FastMCP("GitHubDevCardTools")
 
 # Configure Gemini
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-model = genai.GenerativeModel("gemini-1.5-flash") 
+model = genai.GenerativeModel("gemini-2.0-flash") 
 
 # In-memory cache so tools can share data without relying on the agent
 # to perfectly reconstruct complex dict parameters between tool calls
